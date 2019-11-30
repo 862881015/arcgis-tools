@@ -1,0 +1,11 @@
+{
+  "name": "arcgis-tools",
+  "version": "1.0.0",
+  "description": "tools for arcgis api 3.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gaohan",
+  "license": "ISC"
+}

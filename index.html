@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <!-- <link rel="stylesheet" href="./styles/style.css" /> -->
+        <style>
+            html,
+            body,
+            #main,
+            #map {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            #typhoon-name {
+                position: fixed;
+                width: 100%;
+                top: 15px;
+                color: #ec2828;
+                text-align: center;
+                text-shadow: 1px 0 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+                font-size: 22px;
+                font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                letter-spacing: 3px;
+            }
+
+            #typhoon-name > .subtitle {
+                font-size: 15px;
+                margin-top: 6px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="map"></div>
+
+            <div id="typhoon-name">
+                <div class="title"></div>
+                <div class="subtitle"></div>
+            </div>
+        </div>
+
+        <!-- <script src="dist/bundle.js"></script> -->
+    </body>
+</html>
