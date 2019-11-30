@@ -1,7 +1,7 @@
 import * as esriLoader from "esri-loader";
 import $ from "jquery";
 
-import { test, Typhoon } from "./src/arcgis-tools";
+import { test, Typhoon } from "arcgis-tools";
 import { typhoonList, typhoonInfo } from "./mockData.js";
 
 esriLoader.loadCss("https://cdn.jsdelivr.net/gh/862881015/arcgis_js_api@v1.0.0/esri/css/esri.css");
