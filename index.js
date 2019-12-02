@@ -1,7 +1,7 @@
 import * as esriLoader from "esri-loader";
 import $ from "jquery";
 
-import { test, Typhoon } from "arcgis-tools";
+import { test, Typhoon } from "./src/arcgis-tools";
 import { typhoonList, typhoonInfo } from "./mockData.js";
 
 esriLoader.loadCss("https://cdn.jsdelivr.net/gh/862881015/arcgis_js_api@v1.0.0/esri/css/esri.css");
@@ -33,6 +33,7 @@ class App {
                     "esri/Color",
                     "esri/SpatialReference",
                     "esri/InfoTemplate",
+                    "esri/dijit/InfoWindowLite",
                     "esri/dijit/Scalebar",
                     "esri/geometry/Extent",
                     "esri/layers/MapImageLayer",
@@ -61,6 +62,7 @@ class App {
                         Color,
                         SpatialReference,
                         InfoTemplate,
+                        InfoWindowLite,
                         Scalebar,
                         Extent,
                         MapImageLayer,
@@ -106,6 +108,10 @@ class App {
                         var tdtVecLayer = new TDTVectorLayer();
                         var tdtVecAnnoLayer = new TDTVectorAnnoLayer();
                         map.addLayers([tdtVecLayer, tdtVecAnnoLayer]);
+
+                        map.setInfoWindow(new InfoWindowLite(null, dojo.create("div", null, null, map.root)));
+                        map.infoWindow.startup();
+
                         _this.loadTyphoon();
                     }
                 );
