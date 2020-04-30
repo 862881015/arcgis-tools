@@ -26,6 +26,6 @@
   "dependencies": {
     "@types/arcgis-js-api": "3.28.0",
     "esri-loader": "2.6.0",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
